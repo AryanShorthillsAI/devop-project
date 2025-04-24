@@ -44,5 +44,5 @@ jobs:
         file: ./Dockerfile
         push: true
         tags: |
-            ${{ secrets.DOCKER_USERNAME }}/react-nginx-app:latest
-            ${{ secrets.DOCKER_USERNAME }}/react-nginx-app:v${{ github.run_number }}
+            ${{ secrets.DOCKER_USERNAME }}/react-app:latest
+            ${{ secrets.DOCKER_USERNAME }}/react-app:v${{ github.run_number }}
