@@ -60,4 +60,9 @@ jobs:
       run: |
           kubectl set image deployment/react-app react-app=${{ secrets.DOCKER_USERNAME }}/react-app:latest
           kubectl rollout status deployment/react-app
+    
+    - name: Debug kubectl
+      run:  |
+          kubectl version 
+          kubectl get nodes
       
